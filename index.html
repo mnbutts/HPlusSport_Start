@@ -5,20 +5,21 @@
   <title>HPlus Sport</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="jquery-3.1.1.js"></script>
+  <script src="jquery-3.0.0.js"></script>
   <script>
   		$(function () {
+			//changes background color 
 			$("#products h2.product-name[data-type='vitamin']").css("bacground-color", "blue");
 			$("#products h2.product-name[data-type='proteinbar']").css("bacground-color", "red"));
 			$("#products h2.product-name[data-type='mineralwater']").css("bacground-color", "green"));
 			
-			document.querySelector('#vitamins').addEventListner('change', function (evt) {
+			document.querySelector('#cbvitamins').addEventListner('change', function (evt) {
 				updateProductView("vitamins", evt.target.checked); 
 				});
-			document.querySelector('#protein').addEventListner('change', function (evt) {
+			document.querySelector('#cbprotein').addEventListner('change', function (evt) {
 				updateProductView("protein", evt.target.checked); 
 				});
-			document.querySelector('#mineralWater').addEventListner('change', function (evt) {
+			document.querySelector('#cbmineralWater').addEventListner('change', function (evt) {
 				updateProductView("mineralWater", evt.target.checked); 
 				});
 				
